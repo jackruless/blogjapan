@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label for="title">題名</label>
+    <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+    <label for="description">説明</label>
+    <textarea name="description" id="description" class="form-control"><%= article.description %></textarea>
+</div>
+<div class="form-group">
+    <label for="markdown">コンテンツ</label>
+    <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary">キャンセル</a>
+<button type="submit" class="btn btn-primary">保存する</button>
